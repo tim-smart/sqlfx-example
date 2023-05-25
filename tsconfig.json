@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "rootDir": "src",
+    "baseUrl": ".",
+    "outDir": "dist",
+    "sourceMap": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "lib": ["ESNext"],
+    "target": "ESNext",
+    "skipLibCheck": true,
+    "moduleResolution": "NodeNext",
+    "module": "ESNext"
+  },
+
+  "include": ["src/**/*"]
+}

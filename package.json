@@ -1,0 +1,24 @@
+{
+  "name": "sqlfx-example",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@effect/data": "^0.12.3",
+    "@effect/io": "^0.25.13",
+    "@effect/schema": "^0.19.3",
+    "@sqlfx/pg": "^0.3.5",
+    "dotenv": "^16.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.4",
+    "prettier": "^2.8.8",
+    "typescript": "^5.0.4"
+  }
+}
