@@ -9,8 +9,8 @@
     "lib": ["ESNext"],
     "target": "ESNext",
     "skipLibCheck": true,
-    "moduleResolution": "NodeNext",
-    "module": "ESNext"
+    "moduleResolution": "node16",
+    "module": "CommonJS"
   },
 
   "include": ["src/**/*"]

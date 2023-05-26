@@ -3,7 +3,6 @@ import * as Config from "@effect/io/Config"
 import * as Effect from "@effect/io/Effect"
 import { pipe } from "@effect/data/Function"
 import * as Migrator from "@sqlfx/pg/Migrator"
-import { fileURLToPath } from "url"
 import * as Dotenv from "dotenv"
 import * as Layer from "@effect/io/Layer"
 
@@ -24,9 +23,7 @@ const PgLive = Pg.makeLayer({
 })
 
 const MigratorLive = Migrator.makeLayer({
-  loader: Migrator.fromDisk(
-    fileURLToPath(new URL("migrations", import.meta.url)),
-  ),
+  loader: Migrator.fromDisk(`${__dirname}/migrations`),
 })
 
 const EnvLive = Layer.provideMerge(PgLive, MigratorLive)
